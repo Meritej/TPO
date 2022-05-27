@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Veterinaria Ciudad Jardín</title>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">  
+    <h1>¿Dónde estamos?</h1>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.538111094303!2d-58.592470116299694!3d-34.5905520251123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9ae589dd6d5%3A0xc29d4e0a2463818b!2sVeterinaria%20Ciudad%20Jard%C3%ADn!5e0!3m2!1ses!2sar!4v1653349314961!5m2!1ses!2sar" width="400" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="grid-item">
+    <h1>Formulario de consulta</h1>
+  <form name="myForm" action="show_data.html" target="_blank" onsubmit="return validateForm()">
+    <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..."  >   <br><br>
+    <label for="lastname">Apellido:</label><input size="30"  type="text" name="lastname" placeholder="Ingrese su apellido aqui..." >  <br><br>
+    <label for="telefono">Teléfono: </label><input type="tel" name="telefono" placeholder="ingrese su telefono aqui ...." >  <br><br>
+    <label for="mail">E-mail: </label><input type="email" name="mail" placeholder="xxx@ejemplo.com"  >  <br><br>
+
+    <p>Mascota 
+      <input type="radio" name="mascota" value="perro" checked>Perro
+      <input type="radio" name="mascota" value="Gato">Gato
+    </p>
+
+    <p>Género 
+        <input type="radio" name="gender" value="macho" checked>Macho
+        <input type="radio" name="gender" value="hembra">Hembra
+      </p>
+      <p> Realice su consulta: 
+        <textarea id="consulta" name="consulta" ></textarea>
+    <input type="submit" value="ENVIAR">
+</div>
+</div>
+
+<script>
+
+function validateForm() {
+  let x = document.forms["myForm"]["mail"].value;
+  if (x == "") {
+    alert("Ingrese su Email");
+    return false;
+  }
+}</script>
+
+</body>
+</html>

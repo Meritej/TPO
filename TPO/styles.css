@@ -1,0 +1,175 @@
+.page {
+  margin: 0 auto;
+  font-family: "bitter", serif;
+}
+
+.titulo {
+  font-family: "bitter", serif;
+  color: blueviolet;
+  border-style: dotted;
+  text-align: center;
+  font-size: larger;
+}
+
+a {
+  color: #FFF;
+}
+
+.logo-y-botones {
+  padding: 50px 100px 0 0;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.botones {
+  margin-top: 100px;
+}
+.boton {
+  color: #FFF;
+  background-color: mediumpurple;    
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 8px solid blueviolet;    
+  border-radius: 15px;
+  
+
+  width: 200px;
+  margin: 20px auto;
+  flex-direction: column;
+}
+
+.menu-container {
+  color: #fff;
+  padding: 20px 0;
+  font-family: "bitter", serif;
+}
+
+.menu {
+  border: 1px solid #fff;  
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes {
+  border: 1px solid #fff;  
+  display: flex;
+  justify-content: flex-end;
+}
+.facebook {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #651c6e;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: space-between;
+}
+
+
+.bienvenida {
+  color: #FFF; 
+  font-size: 20px;     
+  display: flex;
+  padding-top: 100px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.icon-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+.icon {
+    width: 300px;
+    height: 300px;
+  }
+
+.grid-item {
+  display: inline-block;
+  justify-content: space-around;
+
+    background-color: rgb(199, 149, 214); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    width: 40%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+  }
+
+  textarea {
+    width: 300px;
+    height: 300%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+
+  
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body,
+  .grid-item {
+    background-color: #f3c896; 
+  }
+
+  iframe {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body, 
+  .grid-item {
+    background-color: #f3aced; 
+  }
+  
+  .icon {
+    width: 50%;
+  }
+
+  .grid-item {
+    width: 50%;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #c692db; 
+  }
+  .logo-inicio {
+    height: 200px;
+    order: 1;
+  }
+  .bienvenida {
+    order: 2;
+  }
+}
